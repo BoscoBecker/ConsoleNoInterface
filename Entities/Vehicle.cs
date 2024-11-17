@@ -1,8 +1,6 @@
-using ConsoleInterface.Enums;
-
 namespace ConsoleInterface.Entities;
 
-public abstract partial class Car(Model Model, string Name, int Year)
+public class Vehicle(string? Model)
 {
 
 }

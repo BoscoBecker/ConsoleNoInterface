@@ -3,9 +3,9 @@ namespace ConsoleInterface.Services;
 
 public class RentalService(double pricePerHour, double priceByDay)
 {
-    public double PricePerHour { get; private set; } = pricePerHour;
-    public double PriceByDay { get; private set; } = priceByDay;
-    private BrazilTaxService _brazilTaxService = new BrazilTaxService();
+    private double PricePerHour { get; set; } = pricePerHour;
+    private double PriceByDay { get; set; } = priceByDay;
+    private readonly BrazilTaxService _brazilTaxService = new BrazilTaxService();
 
     public void ProcessInvoice(CarRental carRental)
     {
